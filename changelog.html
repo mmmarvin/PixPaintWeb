@@ -1,0 +1,63 @@
+<!--
+	Copyright 2020-2021 Marvin Manese 
+-->
+<html>
+<body>
+	<title>PixPaint</title>
+</body>
+<link rel="stylesheet" href="style.css"/>
+<div class="header">
+	<img style="display:block; width: auto; margin-left: auto; margin-right: auto;" src="res/logo.png">
+</div>
+<div class="nav">
+	<a href="index.html">Home</a>
+	<a href="features.html">Features</a>
+	<a href="downloads.html">Downloads</a>
+	<a class="nav_clicked" href="changelog.html">Release Notes</a>
+</div>
+<div class="content">
+<h1>Changes:</h1>
+<ul>
+<li><h2>v.1.02-b.1:</h2></li>
+<h5>
+* Python initialization error now logs the error on a log file<br>
+* Fixed bug where flattening image ignores opacity<br>
+* Fixed bug where moving tabs causes a crash<br>
+* Fixed erase tool not registering a history entry<br>
+* Fixed bug where switching to a tool after using resize or move mode on selection widget prevents the tool to be used<br>
+* Fixed bug where keyboard shortcuts override the text values entered on text mode</h5>
+<li><h2>v.1.02:</h2></li>
+<h5>
+* Added ability to load / save color list<br>
+* Added ability to add / remove colors on the color list<br>
+* Added last known save / open location<br>
+* Added ability to open files using drag method<br>
+* Added layer opacity<br>
+* Reduced sizes of toolbar to increase workspace size<br>
+* Fixed layer / image rotation<br>
+* Fixed bug where saving the project with a filename that doesn't include a file extension causes the next consequent saves to save to a filename with no file extension<br>
+* Fixed bug where program crashes after clicking the box grid menu button on an empty view<br>
+* Fixed bug where selecting all causes the program to crash on an empty view<br>
+* Fixed UI bug where a hidden layer appears checked when change between frames<br>
+* Fixed UI bug where the image does not occupy the whole preview view<br>
+* Fixed bug where color picker does not update the cursor after use<br>
+* Fixed bug where opening an image / animation / project causes the setModified flag to be set<br>
+* Fixed bug where deselecting a selection then undo-ing that deselection, causes the selection to not allow drawing to that selection</h5>
+<li><h2>v.1.01:</h2></li>
+<h5>
+* Added the Custom Brush Tool<br>
+* Added shortcut keys to tools<br>
+* Added box grid<br>
+* Tools now require an ID field (breaks compatibility to v.1.00 tool scripts)<br>
+* Removed anti-aliasing options on all built-in tools<br>
+* Fixed file export bug, where the files being exported are always saved in the program's directory<br>
+* Fixed selection resizing not appearing in undo / redo history<br>
+* Fixed brush tool / eraser tool that causes weird jagged line when using thick brushes<br>
+* Fixed brush tool not rendering on single click draw when using thick brushes<br>
+* Fixed a tool cursor bug, where zooming out causes the tool cursors to not render the correct size<br>
+</ul>
+</div>
+<div class="footer">
+Copyright (c) 2020-2021 Marvin Manese
+</div>
+</html> 

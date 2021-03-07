@@ -1,0 +1,53 @@
+/*****
+ * Copyright 2020-2021 Marvin Manese
+ *****/
+* {
+	font-family: Monospace; !important;
+} 
+ 
+body {
+	background-color: white;
+}
+
+.nav {
+	overflow: hidden;
+	background-color: black;
+}
+
+.nav a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.nav a:hover {
+	background-color: orange;
+}
+
+.nav a:active {
+	background-color: brown;
+}
+
+.nav .nav_clicked {
+	background-color: orange;
+}
+
+.content {
+	background-color: white;
+	display: block;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 50px;
+	padding-bottom: 30px;
+}
+
+.footer {
+	margin-top: 200px;
+	text-align: center;
+}
