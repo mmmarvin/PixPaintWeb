@@ -1,0 +1,15 @@
+{
+	"latest": { 
+		"version": 11000,
+		"bin": {
+			"win": { 
+				"url": "",
+				"checksum": ""
+			},
+			"linux": {
+				"url": "",
+				"checksum": ""
+			}
+		}
+	}
+}
