@@ -4,11 +4,11 @@
 		"bin": {
 			"win": { 
 				"url": "https://codeload.github.com/mmmarvin/PixPaint/zip/refs/tags/v.1.02-b.1",
-				"checksum": ""
+				"checksum": "a9b874a504b1506b61b9bbffc64b56f823544f5e4114b31297f76f865672a50d"
 			},
 			"linux": {
 				"url": "https://codeload.github.com/mmmarvin/PixPaint/zip/refs/tags/v.1.02-b.1",
-				"checksum": ""
+				"checksum": "a9b874a504b1506b61b9bbffc64b56f823544f5e4114b31297f76f865672a50d"
 			}
 		}
 	}
