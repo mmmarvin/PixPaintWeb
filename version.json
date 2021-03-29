@@ -1,13 +1,13 @@
 {
 	"latest": { 
-		"version": 11000,
+		"version": 10211,
 		"bin": {
 			"win": { 
-				"url": "",
+				"url": "https://github.com/mmmarvin/PixPaint/archive/refs/tags/v.1.02-b.1.zip",
 				"checksum": ""
 			},
 			"linux": {
-				"url": "",
+				"url": "https://github.com/mmmarvin/PixPaint/archive/refs/tags/v.1.02-b.1.zip",
 				"checksum": ""
 			}
 		}
