@@ -3,11 +3,11 @@
 		"version": 10211,
 		"bin": {
 			"win": { 
-				"url": "https://codeload.github.com/mmmarvin/PixPaint/zip/refs/tags/PixPaint-v.1.02-b.1.zip",
+				"url": "https://codeload.github.com/mmmarvin/PixPaint/zip/refs/tags/v.1.02-b.1",
 				"checksum": ""
 			},
 			"linux": {
-				"url": "https://codeload.github.com/mmmarvin/PixPaint/zip/refs/tags/PixPaint-v.1.02-b.1.zip",
+				"url": "https://codeload.github.com/mmmarvin/PixPaint/zip/refs/tags/v.1.02-b.1",
 				"checksum": ""
 			}
 		}
