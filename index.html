@@ -1,70 +1,146 @@
-<!--
-	Copyright 2020-2021 Marvin Manese 
--->
 <html>
 <head>
-	<title>PixPaint</title>
+<title>PixPaint</title>
 </head>
 <body>
+<script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+<script type="text/javascript" src="js/download.js"></script>
 <link rel="stylesheet" href="style.css"/>
-<div class="header">
-	<img style="display:block; width: auto; margin-left: auto; margin-right: auto;" src="res/logo.png">
+
+<div class="main_title main_margin">
+	<span><a href="index.html"><img id="title_logo" src="res/logo.png"></a></span>
+	<span><img id="title_logo_text" src="res/logo_text.png"></span>
 </div>
-<div class="nav">
-	<a class="nav_clicked" href="index.html">Home</a>
-	<a href="downloads.html">Downloads</a>
-	<a href="changelog.html">Release Notes</a>
-	<a href="https://github.com/mmmarvin/PixPaint">Source Code</a>
-	<a href="https://github.com/mmmarvin?tab=repositories">Other Projects</a>
+<div class="main_nav main_margin">
+	<a id="main_nav_clicked" href="index.html">Home</a>
+	<a href="">Documentation</a>
+	<a href="https://github.com/mmmarvin/PixPaint">Source</a>
 </div>
-<div class="content">
-	<div class="contents">
-		<h1 id="title" class="shadow">PixPaint<h1>
-		<div style="display:block; margin-left: 100px; margin-right: 50px; float:left;">
-			<img style="width: 400px; height: 216px;" src="res/screenshot02.png">
+<div class="main_content main_margin">
+	<div id="content_header">
+		<div style="padding-top: 10px; text-align: center;">
+			<div class="shadow-large" style="font-weight: bolder; font-size: 30px;">PixPaint</div>
+			<img width="400" height="200" src="res/screenshot01.png">
+			<img width="400" height="200" src="res/screenshot02.png">
 		</div>
-		<div style="display:block; color: white; padding: 10px; margin-left: 100px;">
-			<h2>Create pixel art, and animated sprites.</h2>
+		<div>
+			<h2 class="shadow-large">Create pixel art, and animated sprites.</h2>
+		</div>
+		<div style="padding-top: 20px; padding-bottom: 40px;">
+			<div class="download_btn" id="download_btn_stable" style="text-align: center;">
+				<a href="">Download Latest Stable Version</a>
+			</div>
+		</div>
+		<div style="padding-top: 5px; padding-bottom: 40px;">
+			<div class="download_btn" id="download_btn_latest" style="text-align: center;">
+				<a href="">Download Latest Version</a>
+			</div>
 		</div>
 	</div>
-	<div style="margin-top: 50px; text-align: center;">
-	<a id="home_download_btn" href="https://github.com/mmmarvin/PixPaint/releases/download/v.1.02-b.1/pixpaint-v.1.02-b.1_x86_64.exe">Download Latest (v.1.02-b.1)</a>
-	</div>
-<!--	<div class="content_section">-->
-		<h1 class="section" style="margin-top: 50px;">Features:</h1>
-<!--	</div>-->
-	<div class="section_contents">
-		<table class="feature_table">
-			<tr>
-				<td>
-					<h2>Animations</h2>
-					<h3>Create / Remove or move frames to create an animation</h3>
-					<img src="res/screenshot_animation.png">
-				</td>
-				<td>
-					<h2>Multiple layers</h2>
-					<h3>Create / Remove or move layers</h3>
-					<img src="res/screenshot_layers.png">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<h2>Extensible tools / effects or file types</h2>
-					<h3>Create your own tool / effect or file type using python</h3>
-					<img src="res/screenshot_extend.png">
-				</td>
-				<td>
-					<h2>Customizable Brush</h2>
-					<h3>Create your own brush</h3>
-					<img src="res/screenshot_brush.png">
-				</td>
-			</tr>
-		</table>
+	<div style="text-align: center;">
+		<div class="content_separator"><a id="content_features_separator" href="#">Features</a></div>
+		<div id="content_features">
+			<div class="content_widget content_floating_widget">
+				<div class="content_widget_padding"></div>
+				<div class="content_widget_title">Animations</div>
+				<div>Create, remove or move frames to<br> create an animation</div>
+				<div><img src="res/screenshot_animation.png"></div>
+				<div class="content_widget_padding"></div>
+			</div>
+			<div class="content_widget">
+				<div class="content_widget_padding"></div>
+				<div class="content_widget_title">Layers</div>
+				<div>Support for multiple layers for easier <br> composition of an image</div>
+				<div><img src="res/screenshot_layers.png"></div>
+				<div class="content_widget_padding"></div>
+			</div>
+			<div class="content_widget content_floating_widget">
+				<div class="content_widget_padding"></div>
+				<div class="content_widget_title">Extensible tools / <br>effects or file types</div>
+				<div>Create your own tool, effect or<br> file type using python</div>
+				<div><img src="res/screenshot_extend.png"></div>
+				<div class="content_widget_padding"></div>
+			</div>
+			<div class="content_widget">
+				<div class="content_widget_padding"></div>
+				<div class="content_widget_title">Customizable Brush</div>
+				<div>Create your own brush that suits<br> your needs</div>
+				<div><img src="res/screenshot_brush.png"></div>
+				<div class="content_widget_padding"></div>
+			</div>
+			<div style="text-align: left; width:50%;">
+				<div class="content_widget" style="text-align: center;">
+					<div class="content_widget_padding"></div>
+					<div class="content_widget_title">Auto-Update</div>
+					<div>Automatic updates to keep your <br>program up-to-date</div>
+					<div><img src="res/screenshot_brush.png"></div>
+					<div class="content_widget_padding"></div>
+				</div>
+			</div>
+		</div>
+		<div class="content_separator"><a id="content_downloads_separator" href="#">Downloads</a></div>
+		<div id="content_downloads">
+			<div class="content_widget_padding"></div>
+			<table class="table_center">
+				<tr>
+					<td width="300px" style="font-size: 24px">PixPaint</td>
+					<td width="300px"></td>
+				</tr>
+				<tr class="table_gray">
+					<td>Version:</td>
+					<td>Links:</td>
+				</tr>
+				<tr>
+					<td>v.1.02-b.1</td>
+					<td><a href="https://github.com/mmmarvin/PixPaint/releases/download/v.1.02-b.1/pixpaint-v.1.02-b.1_x86_64.exe">Win64</a></td>
+				</tr>
+				<tr class="table_light_gray">
+					<td>v.1.02-a.0</td>
+					<td><a href="https://github.com/mmmarvin/PixPaint/releases/download/v.1.02-alpha/pixpaint-v.1.02_x86_64.exe">Win64</a></td>
+				</tr>
+				<tr>
+					<td>v.1.01-alpha</td>
+					<td><a href="https://github.com/mmmarvin/PixPaint/releases/download/v.1.01-alpha/pixpaint-v.1.01_x86_64.exe">Win64</a></td>
+				</tr>
+				<tr class="table_light_gray">
+					<td>v.1.00-alpha</td>
+					<td><a href="https://github.com/mmmarvin/PixPaint/releases/download/v.1.00-alpha/pixpaint-v.1.00_x86_64.exe">Win64</a></td>
+				</tr>
+			</table>
+			<div class="content_widget_padding"></div>
+			<table class="table_center">
+				<tr>
+					<td width="300px" style="font-size: 24px">Custom Tools</td>
+					<td width="300px"></td>
+				</tr>
+				<tr class="table_gray">
+					<td>Tool:</td>
+					<td>Links:</td>
+				</tr>
+				<tr>
+					<td>Anti-Aliased Line Tool</td>
+					<td><a href="https://raw.githubusercontent.com/mmmarvin/PixPaint/master/sample/anti_aliased_line_tool.py">Download</a></td>
+				</tr>
+				<tr class="table_light_gray">
+					<td>Anti-Aliased Rectangle Tool</td>
+					<td><a href="https://raw.githubusercontent.com/mmmarvin/PixPaint/master/sample/anti_aliased_rec_tool.py">Download</a></td>
+				</tr>
+				<tr>
+					<td>Anti-Aliased Circle Tool</td>
+					<td>Download</td>
+				</tr>
+				<tr class="table_light_gray">
+					<td>Anti-Aliased Brush Tool</td>
+					<td>Download</td>
+				</tr>
+			</table>
+			<div class="content_widget_padding"></div>
+		</div>
 	</div>
 </div>
-<div class="footer">
-	<h1>Copyright (c) 2020-2021 Marvin Manese</h1>
-	<h1>All rights reserved</h1>
+<div class="main_footer" style="text-align: center;">
+<div>Copyright (c) 2020-2021 Marvin Manese</div>
 </div>
+<script type="text/javascript" src="js/animation.js"></script>
 </body>
 </html> 
